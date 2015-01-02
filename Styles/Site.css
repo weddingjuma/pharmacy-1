@@ -1,0 +1,843 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body   
+{
+    background: #b6b7bc;
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+}
+a
+{
+    text-decoration:none;
+}
+    
+
+/*a:link, a:visited
+{
+    color: #034af3;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}*/
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    width: 960px;
+    background-color: #fff;
+    margin: 20px auto 0px auto;
+    border: 1px solid #496077;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    /*background: #4b6c9e;*/
+    background:url('../images/HeaderSecure.png');
+    height:120px;
+}
+.headerUnsecure
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    /*background: #4b6c9e;*/
+    background:url('../images/headermain.png');
+    height:150px;
+}
+.signinbtn
+{
+    float:right;
+    margin: 20px 0 0 20px;
+    width:113px;
+    height:42px;
+}
+
+.leftmenubar
+{
+    width:222px;
+    float:left; 
+    /*min-height:650px;*/
+    height:auto;
+}
+.leftmenubarUnsecure
+{
+    width:222px;
+    float:left; 
+    min-height:650px;
+    /*height:auto;*/
+    background: url('../images/LeftLastSection.png');
+    
+}
+ .home-left
+ {
+     float:left ;
+     width:430px;
+     color:#6c6e70;
+     font-family:Trebuchet MS;
+     margin-left:20px;
+ }
+.SpacialInteresTitle
+{
+    color:White;
+    font-family:Trebuchet MS;
+    margin:22px 10px 15px 20px;
+    font-size:18px;
+}
+.SpacialInteresText
+{
+    margin:15px 15px 15px 20px;
+}
+.InterierTitle
+{
+    color:#71b8e0;
+    font-family:Helvetica light;
+    font-size:40px;
+    line-height:70px;
+    height:70px;
+    width:730px;
+    margin-left:20px;
+}
+.success
+{
+    color:#71b8e0;
+}
+.error
+{
+    color:Red;
+}
+.patientInfo
+{
+    margin:0 10px 0 10px;
+}
+.InterierLeftColumn
+{
+    float:left;
+    width:340px;
+    margin:20px 0 0 20px;
+   
+}
+.InterierRightColumn
+{
+    float:right ;
+    width:340px;
+    margin:20px 20px 0 0;
+}
+.orangebox
+{
+    
+    margin-left:-200px;
+    
+    margin-top:-150px;
+}
+.singoutsection
+{
+    width:222px; 
+    height:180px; 
+    background-color:#E3F3FA;
+}
+.rightmaincontent
+{
+    float:left; 
+    width:738px;
+    min-height:650px;
+}
+.rightlastsection
+{
+    background:url('../images/LeftLastSection.png');
+    width:222px;
+    /*height:234px;*/
+}
+.wizardtitle
+{
+    margin-bottom:30px;
+    /*margin-left:20px;*/
+}
+.wizardtitleright
+{
+    float:left; 
+    text-align:right; 
+    width:50%;
+}
+.wizardtitleleft
+{
+    float:left; 
+    text-align:left; 
+    width:50%;
+}
+.detailwizard
+{
+    clear:both;
+}
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+.main
+{
+    /*padding: 0px 12px;*/
+    /*margin: 12px 8px 8px 8px;*/
+    min-height: 420px;
+    position:relative;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto 20px;
+    text-align: center;
+    line-height: normal;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    background-color:#3a4f63;
+    width:100%;
+}
+
+div.menu
+{
+    padding: 4px 0px 4px 8px;
+}
+
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #465c71;
+    border: 1px #4e667d solid;
+    color: #dde4ec;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+div.menu ul li a:hover
+{
+    background-color: #bfcbd6;
+    color: #465c71;
+    text-decoration: none;
+}
+
+div.menu ul li a:active
+{
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+    fieldset
+    {
+        margin-bottom:10px;
+        border:0px ;
+    }
+    
+    legend
+    {
+        padding:0 2px;
+        font-weight:bold ;
+    }
+    
+    label 
+    {
+        display:inline-block;
+        line-height :1.8em;
+        vertical-align:top;
+    }
+    fieldset ol 
+    {
+        margin:0;
+        padding:0
+    }
+    fieldset li
+    {
+        list-style:none;
+        padding : 5px 0px 5px 5px;
+    }
+    .l1
+    {
+        padding-left:20px;
+    }
+        
+    label
+    {
+        width:120px;
+    }
+    label.short
+    {
+        width:50px
+    }
+    input.short
+    {
+        width: 40px;
+        border: 1px solid #ccc;
+    }
+    div.wizard
+    {
+        padding : 5px 5px 5px 5px;
+        color:#5d7b9d;
+    }
+    div.wizard ul
+    {
+        list-style:none;
+        padding:0px 0px 0px 0px;
+    }
+    div.wizard li
+    {
+        list-style:none;
+        padding : 5px 0px 5px 5px;
+    }
+    div.antibiotics_prescribed
+    {
+        display:inline;
+        height:360px;
+        width:360px; 
+        position:fixed; 
+        top:200px; 
+        left:40%; 
+        background-color:White; 
+        padding:0px 0px 10px 0px; 
+        border-style:solid; 
+        border-width:thin;
+        border-color:Gray;    
+    }
+    div.lab
+    {
+        display:inline;
+        height:auto;
+        width:360px; 
+        position:absolute; 
+        top:150px; 
+        left:40%; 
+        background-color:White; 
+        padding:0px 0px 10px 0px; 
+        border-style:solid; 
+        border-width:thin;
+        border-color:Gray;    
+    }
+    div.cost_savings
+    {
+        display:inline;
+        height:auto;
+        width:360px; 
+        position:absolute; 
+        top:5px; 
+        left:40%;
+        background-color:White; 
+        padding:0px 0px 10px 0px; 
+        border-style:solid; 
+        border-width:thin;
+        border-color:Gray;    
+    }
+    div.UpdateRecomendedAccepted
+    {
+        display:inline;
+        height:auto;
+        width:360px; 
+        position:absolute; 
+        top:5px; 
+        left:40%;
+        background-color:White; 
+        padding:0px 0px 10px 0px; 
+        border-style:solid; 
+        border-width:thin;
+        border-color:Gray;    
+    }
+    div.CheckedBy
+    {
+        display:inline;
+        height:auto;
+        width:360px; 
+        position:absolute; 
+        top:5px; 
+        left:40%;
+        background-color:White; 
+        padding:0px 0px 10px 0px; 
+        border-style:solid; 
+        border-width:thin;
+        border-color:Gray;    
+    }
+    div.antibiotics_prescribed_wizard
+    {
+        display:none;
+        height:360px;
+        width:360px; 
+        position:fixed; 
+        top:200px; 
+        left:40%; 
+        background-color:White; 
+        padding:0px 0px 10px 0px; 
+        border-style:solid; 
+        border-width:thin;
+        border-color:Gray;    
+    }
+    fieldset.section
+    {
+        border-style:solid;
+        border-color:Gray;
+        border-width:thin;
+    }
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+
+#loginbox
+{
+    width:350px;
+    margin:30px auto;
+}
+.ui-autocomplete-loading 
+{
+		background: white url('Styles/smoothness/images/ui-anim_basic_16x16.gif') right center no-repeat;
+}
+.ui-autocomplete {
+	max-height: 200px;
+	overflow-y: hidden;
+	/* prevent horizontal scrollbar */
+	overflow-x: hidden;
+}
+/* IE 6 doesn't support max-height
+ * we use height instead, but this forces the menu to always be this tall
+ */
+* html .ui-autocomplete 
+{
+	height: 200px;
+}
+textarea { overflow: auto; }
+.menubutton
+{
+    background:url('../Images/menubuttom_off.png') no-repeat;
+    width:222px;
+    height:58px;
+    line-height:58px;
+    color:#8f9192;
+    font-size:16px;
+    
+}   
+.menubutton a
+{
+    padding-left:25px;
+    color:#8f9192;
+    text-decoration:none;
+}
+
+.menubutton a:hover
+{
+    
+    color:#ffffff;
+    text-decoration:none;
+}
+.adminsubmenu
+{
+    line-height:20px;
+    background:url('../images/LeftLastSection.png');
+    position:absolute;
+    top:410px;
+    left:225px;
+    height:230px;
+    overflow:auto;
+    width:200px;
+    z-index:1;
+}
+.adminsubmenu a
+{
+    color:#8f9192;
+}
+
+.data-table {
+	margin:18px 0 0 0;
+	word-break:break-all; word-wrap:break-word;
+}
+.data-table th
+{
+   text-align:left ;
+}
+.data-table td {
+	padding:12px 10px;
+	color:#333;
+	font-size: 10px;
+	background:url(../images/table-border.png) bottom left repeat-x;
+}
+.data-table-pastdue td {
+	padding:12px 10px;
+	color:red;
+	font-size: 10px;
+	background:url(../images/table-border.png) bottom left repeat-x;
+}
+.data-table tbody tr:last-child td {
+	background:none;
+}
+.data-table tbody tr:hover td {
+	background:#ececec url(../images/table-border.png) bottom left repeat-x;
+	cursor:pointer;
+}
+.data-table tbody tr:last-child:hover td {
+	background:#ececec;
+	cursor:pointer;
+}
+.data-table tbody tr:last-child:hover td.highlight {
+	background:#ececec;
+	cursor:pointer;
+}
+.data-table td.highlight {
+	background:#f8f8f8 url(../images/table-border.png) bottom left repeat-x;
+	padding:4px 12px;
+}
+.data-table td.highlight a {
+	text-decoration:none;
+}
+.data-table td.highlight span {
+	background:#FFF;
+	border:1px solid #dedfdf;
+	padding:2px 4px;
+}
+.data-table tbody tr:last-child td.highlight {
+	background:#f8f8f8;
+}
+.data-table td a {
+	color:#006699;
+	font-weight:normal;
+	text-decoration:underline;
+}
+.data-table td span.report {
+	float:left;
+	clear:both;
+	width:80%;
+	margin:2px 0 2px 13px;
+	background:none !important;
+	border:none !important;
+	padding:none !important;
+}
+.data-table th {
+	background:#f8f8f8;
+	font-size: 10px;
+	padding:6px 6px;
+	border-top:1px solid #e2e2e2;
+	border-bottom:1px solid #e2e2e2;
+}
+.data-table th a {
+	color:#00498d;
+	font-weight:normal;
+	text-decoration:underline;
+}
+.data-table tfoot td {
+	padding:6px 6px;
+	color:#333;
+	font-size:11px;
+	background:#f8f8f8;
+	border-top:1px solid #e2e2e2;
+	border-bottom:1px solid #e2e2e2;
+}
+.data-table tfoot .ctrl {
+	float:left;
+	clear:both;
+	margin:0 0 0 42px;
+}
+.data-table tfoot .ctrl a {
+	color:#006699;
+	font-weight:normal;
+	text-decoration:none;
+}
+.data-table tfoot .ctrl-prev {
+	float:left;
+	padding:0 14px 0 0;
+	margin:0 14px 0 0;
+	background:url(../images/div-lite.gif) center right no-repeat;
+}
+.data-table tfoot .ctrl-next {
+	float:left;
+	margin:0 32px 0 0;
+}
+.data-table tfoot .ctrl-num {
+	float:left;
+	margin:0 32px 0 0;
+}
+.data-table tfoot .ctrl-first {
+	float:left;
+	padding:0 14px 0 0;
+	margin:0 14px 0 0;
+	background:url(../images/div-lite.gif) center right no-repeat;
+}
+.data-table tfoot .ctrl-last {
+	float:left;
+	margin:0 14px 0 0;
+}
+.data-table tfoot td.total {
+	text-align:right;
+	text-transform:uppercase;
+	padding:6px 16px;
+}
+.data-table tfoot td.total-amount {
+	padding:6px 16px;
+}
+.btn
+{
+    background:url('../images/Buttons_off.png') no-repeat;
+    color:White ;
+    border:0 none ;
+    width:75px;
+    height:25px;
+    font-family:Verdana;
+    font-size:0.8em;
+}
+.btnClose
+{
+    background:url('../Styles/smoothness/images/ui-icons_222222_256x240.png') no-repeat;
+    background-position-x: -34px;
+    background-position-y: -192px;
+    border:none;
+}
+.wizardlable_warfarin
+{
+    width:260px;
+    display:inline-block;
+}
+.divdisplay
+{
+    display:inline;
+    height:330px;
+    width:400px; 
+    position:fixed; 
+    top:200px; 
+    left:40%; 
+    background-color:White; 
+    /*padding:10px 10px 10px 10px;*/
+    border-style:solid; 
+    border-width:thin;
+    border-color:Gray;    
+}
+.divdisplaynone
+{
+    display:none;
+}
+.popupHeading
+{
+    height:25px; 
+    background-color:#71b8e0; 
+    color:White; 
+    padding-left:10px; 
+    padding-top:10px;
+}
+.watermark { color: #999; }
+.searchPatientDiv
+{
+    background-color:#71b8e0; 
+    padding-top:10px; 
+    padding-bottom:10px; 
+    padding-left:5px;
+}
+div.taskLogsTracking
+{
+    display:inline;
+    /*height:auto;*/
+    width:520px;
+    position:absolute; 
+    top:5px; 
+    left:30%; 
+    background-color:White; 
+    padding:0px 0px 10px 0px; 
+    border-style:solid; 
+    border-width:thin;
+    border-color:Gray;    
+}
+div.taskLogsTracking label
+{
+    width:180px;        
+}
+div.FrequencyDropdowns
+{
+    float:left; 
+    width:183px;
+}
+div.FrequencyDropdownsSeparator
+{
+    height:10px;
+    clear:both;
+}
+div.confirmAnotherTaskPopUp
+{
+    display:inline;
+    height:300;
+    width:350px;
+    position:absolute; 
+    top:5px; 
+    left:30%; 
+    background-color:White; 
+    padding:0px 0px 10px 0px; 
+    border-style:solid; 
+    border-width:thin;
+    border-color:Gray; 
+}
